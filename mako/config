@@ -1,0 +1,8 @@
+on-button-left=dismiss
+on-button-right=invoke-default-action
+on-button-middle=dismiss-all
+
+background-color=#82FCFC
+border-color=#070D2B
+text-color=#000000
+border-radius=5

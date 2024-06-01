@@ -1,1 +1,0 @@
-/home/tanmay/.config/mako
