@@ -1,0 +1,31 @@
+modmap:
+  - name: space_mod
+    remap:
+      space:
+        held: super_l
+        alone: space
+        alone_timeout_millis: 200
+
+  - name: capslock_backspace
+    remap:
+      Capslock: backspace
+
+  - name: backslash_ctrl
+    remap:
+      Backslash:
+        held: ctrl_l
+        alone: backslash
+
+  - name: shift_tab_esc
+    remap:
+      shift_r:
+        held: shift_r
+        alone: esc
+
+keymap:
+  - name: vim_motions
+    remap:
+      Alt-j: left
+      Alt-k: down
+      Alt-l: up
+      Alt-semicolon: right

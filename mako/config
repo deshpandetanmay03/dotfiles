@@ -1,5 +1,5 @@
-on-button-left=dismiss
-on-button-right=invoke-default-action
+on-button-left=invoke-default-action
+on-button-right=dismiss
 on-button-middle=dismiss-all
 
 background-color=#82FCFC
