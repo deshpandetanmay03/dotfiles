@@ -1,0 +1,15 @@
+#!/bin/bash
+
+cd ~/Projects/dotfiles/.config
+
+for item in *; do
+    if [ -d "$item" ]; then
+	rm ~/.config/$item
+        ln -s $(pwd)/$item ~/.config/
+    fi
+done
+
+cd ..
+
+rm ~/.local/bin
+ln -s $(pwd)/bin ~/.local/bin
