@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd ~/Projects/dotfiles/.config
+cd ~/Projects/dotfiles/config
 
 for item in *; do
     if [ -d "$item" ]; then
@@ -13,3 +13,6 @@ cd ..
 
 rm ~/.local/bin
 ln -s $(pwd)/bin ~/.local/bin
+
+rm ~/.w3m
+ln -s $(pwd)/w3m ~/.w3m

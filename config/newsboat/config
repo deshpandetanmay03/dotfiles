@@ -1,7 +1,7 @@
-#show-read-feeds no
+# show-read-feeds no
 auto-reload yes
 
-browser "xdg-open"
+browser "w3m %u"
 
 bind-key k down
 bind-key l up
@@ -54,6 +54,3 @@ highlight article "\\[embedded flash: [0-9][0-9]*\\]" green color225 bold
 highlight article ":.*\\(link\\)$" cyan color225
 highlight article ":.*\\(image\\)$" blue color225
 highlight article ":.*\\(embedded flash\\)$" magenta color225
-
-macro , open-in-browser
-macro v set browser "setsid -f mpv" ; open-in-browser ; set browser linkhandler

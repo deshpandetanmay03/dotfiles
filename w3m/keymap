@@ -1,0 +1,4 @@
+keymap j MOVE_LEFT
+keymap k MOVE_DOWN
+keymap l MOVE_UP
+keymap ";" MOVE_RIGHT
