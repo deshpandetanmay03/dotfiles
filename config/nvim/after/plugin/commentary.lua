@@ -1,2 +1,2 @@
-vim.keymap.set("n", "<A-/>", vim.cmd.Commentary)
-vim.keymap.set("v", "<A-/>", ":'<,'>Commentary<CR>")
+vim.keymap.set("n", "<leader>/", vim.cmd.Commentary)
+vim.keymap.set("v", "<leader>/", ":'<,'>Commentary<CR>")

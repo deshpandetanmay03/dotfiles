@@ -1,0 +1,11 @@
+#!/bin/sh
+
+level=$(cat /sys/class/power_supply/BAT0/capacity)
+
+if [ $level -gt 50 ]; then
+    notify-send "battery full" $level
+elif [ $level -gt 20 ]; then
+    notify-send "battery low" $level
+else
+    notify-send --urgency=critical "battery very low" $level
+fi

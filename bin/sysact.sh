@@ -1,15 +1,16 @@
 #!/bin/sh
 
-action=$(printf "nothing\npoweroff\nreboot\nsuspend\nhibernate" | fuzzel --dmenu)
+action=$(printf "lock\nshutdown\nrestart\nsuspend\nhibernate" | fuzzel --dmenu)
 
 case $action in
-    nothing)
+    lock)
+        hyprlock
         ;;
-    poweroff)
-        poweroff
+    shutdown)
+        systemctl poweroff
         ;;
-    reboot)
-        reboot
+    restart)
+        systemctl reboot
         ;;
     suspend)
         systemctl suspend

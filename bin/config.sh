@@ -8,18 +8,25 @@ binary" | fuzzel --dmenu)
 
 case $config in
     "config folder")
-        echo "/home/tanmay/.config"
+        $1 $2 "/home/tanmay/.config"
         ;;
     nvim)
-        echo "/home/tanmay/.config/nvim"
+        $1 $2 "/home/tanmay/.config/nvim"
         ;;
     hypr)
-        echo "/home/tanmay/.config/hypr"
+        $1 $2 "/home/tanmay/.config/hypr"
         ;;
     xremap)
-        echo "/home/tanmay/.config/xremap"
+        $1 $2 "/home/tanmay/.config/xremap"
         ;;
     binary)
-        echo "/home/tanmay/.local/bin"
+        $1 $2 "/home/tanmay/.local/bin"
+        ;;
+    "")
+        echo "invalid option"
+        ;;
+    *)
+        $1 $2 "/home/tanmay/.config/$config"
         ;;
 esac
+

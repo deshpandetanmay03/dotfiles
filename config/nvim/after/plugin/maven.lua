@@ -1,6 +1,5 @@
 require("supermaven-nvim").setup({
   keymaps = {
-    accept_suggestion = "<C-Space>",
+    accept_suggestion = "<A-Space>",
   },
 })
-vim.api.nvim_set_keymap("i", "<Tab>", "<Tab>", { silent = true })

@@ -2,7 +2,13 @@ on-button-left=invoke-default-action
 on-button-right=dismiss
 on-button-middle=dismiss-all
 
-background-color=#82FCFC
-border-color=#070D2B
-text-color=#000000
+background-color=#faf4ed
+border-color=#286983
+text-color=#575279
 border-radius=5
+font=monospace 12
+
+[urgency=high]
+border-color=#b4637a
+text-color=#b4637a
+font=monospace 14
