@@ -1,3 +1,4 @@
 config/newsboat/urls
 bin/bunx
 w3m/history
+config/mpd/playlists/*
