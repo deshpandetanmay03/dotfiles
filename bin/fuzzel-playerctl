@@ -1,0 +1,26 @@
+#!/bin/sh
+
+sources=$(playerctl -l)
+
+source=$(printf "$sources" | fuzzel --prompt "Sources: " --dmenu)
+
+if [ -z "$source" ]; then
+    exit
+fi
+
+action=$(printf "play\npause\nnext\nprevious\nstop" | fuzzel --prompt "Action: " --dmenu)
+
+if [ -z "$action" ]; then
+    exit
+fi
+if [ "$action" = "play" ]; then
+    playerctl -p "$source" play
+elif [ "$action" = "stop" ]; then
+    playerctl -p "$source" stop
+elif [ "$action" = "pause" ]; then
+    playerctl -p "$source" pause
+elif [ "$action" = "next" ]; then
+    playerctl -p "$source" next
+elif [ "$action" = "previous" ]; then
+    playerctl -p "$source" previous
+fi

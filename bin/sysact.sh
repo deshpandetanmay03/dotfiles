@@ -1,6 +1,6 @@
 #!/bin/sh
 
-action=$(printf "lock\nshutdown\nrestart\nsuspend\nhibernate" | fuzzel --dmenu)
+action=$(printf "lock\nshutdown\nrestart\nsuspend" | fuzzel --dmenu)
 
 case $action in
     lock)
@@ -13,9 +13,6 @@ case $action in
         systemctl reboot
         ;;
     suspend)
-        systemctl suspend
-        ;;
-    hibernate)
-        systemctl hibernate
+        hyprlock & systemctl suspend
         ;;
 esac

@@ -1,0 +1,14 @@
+#!/bin/sh
+action=$(printf "Window\nArea\nScreen" | fuzzel --dmenu)
+
+case $action in
+    Window )
+        hyprshot -m window --output-folder=$HOME/Screenshots
+        ;;
+    Area )
+        hyprshot -m region --output-folder=$HOME/Screenshots
+        ;;
+    Screen )
+        hyprshot -m output --output-folder=$HOME/Screenshots
+        ;;
+esac
