@@ -16,3 +16,9 @@ ln -s $(pwd)/bin ~/.local/bin
 
 rm ~/.w3m
 ln -s $(pwd)/w3m ~/.w3m
+
+rm ~/.bashrc
+ln -s $(pwd)/bashrc ~/.bashrc
+
+rm ~/.bash_profile
+ln -s $(pwd)/bash_profile ~/.bash_profile
