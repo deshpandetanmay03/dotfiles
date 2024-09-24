@@ -1,0 +1,7 @@
+[Desktop Entry]
+Exec=syncthing --no-browser
+Icon=
+Name=syncthing
+Path=
+Terminal=False
+Type=Application

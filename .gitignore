@@ -3,3 +3,4 @@ bin/bunx
 w3m/history
 w3m/cookie
 config/mpd/playlists/*
+config/nvim.bkp

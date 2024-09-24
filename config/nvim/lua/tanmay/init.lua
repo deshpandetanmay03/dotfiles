@@ -1,6 +1,6 @@
-require("tanmay.remaps")
-require("tanmay.plugins")
-require("tanmay.settings")
-if vim.g.neovide then
-    require("tanmay.neovide")
-end
+vim.cmd("set expandtab")
+vim.cmd("set tabstop=2")
+vim.cmd("set softtabstop=2")
+vim.cmd("set shiftwidth=2")
+
+vim.g.mapleader = "<space>"

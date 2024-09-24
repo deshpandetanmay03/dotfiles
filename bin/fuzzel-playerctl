@@ -8,12 +8,14 @@ if [ -z "$source" ]; then
     exit
 fi
 
-action=$(printf "play\npause\nnext\nprevious\nstop" | fuzzel --prompt "Action: " --dmenu)
+action=$(printf "toggle\nplay\npause\nnext\nprevious\nstop" | fuzzel --prompt "Action: " --dmenu)
 
 if [ -z "$action" ]; then
     exit
 fi
-if [ "$action" = "play" ]; then
+if [ "$action" = "toggle" ]; then
+    playerctl -p "$source" play-pause
+elif [ "$action" = "play" ]; then
     playerctl -p "$source" play
 elif [ "$action" = "stop" ]; then
     playerctl -p "$source" stop

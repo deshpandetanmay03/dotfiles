@@ -446,7 +446,7 @@ def_key "j"
   jump_to_parent_directory
 def_key ";"
   enter_directory
-def_key ";"
+def_key "enter"
   run_action
 def_key ";"
   play_item
