@@ -31,4 +31,10 @@ function music() {
     cd -
 }
 
+function gcp () {
+  git add .
+  git commit
+  git push
+}
+
 #source /etc/bash_completion.d/*
