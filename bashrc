@@ -31,7 +31,7 @@ function music() {
     cd -
 }
 
-function gcp () {
+function acp () {
   git add .
   git commit
   git push
